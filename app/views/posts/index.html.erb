@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+<%# embedded Ruby comment %>
+
+<%= render @posts %>
+
+<br>
+
+<%= link_to 'New Post', new_post_path %>
+
+<br/>
+
+<%= "number_to_currency to #{number_to_currency 100}" %>
+<br/>
+<%= "number_to_human to #{number_to_human 1000000}" %>
+<br/>
+<%= "number_to_human_size to #{number_to_human_size 1024}" %>
+<br/>
+<%= "number_to_percentage to #{number_to_percentage 12.345, precision: 1}" %>
+<br/>
+<%= "number_with_delimiter to #{number_with_delimiter 2}" %>
+<br/>
+<%= "number_with_precision to #{number_with_precision 2}" %>
+<br/>
+<%= "friendly_date to #{friendly_date Time.new(2014, 12, 25)}" %>
+<br/>
